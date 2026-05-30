@@ -108,14 +108,14 @@ export default function Pillars() {
               <span className="eyebrow-line" style={{ background: '#e07a5f' }} />
               Our Approach
             </span>
-            <h2 style={{ fontSize: 'clamp(2rem,4vw,3.4rem)', color: '#120c0b', marginTop: '1rem', letterSpacing: '-.02em', lineHeight: '1.08', fontWeight: 400 }}>
+            <h2 style={{ fontSize: 'clamp(2rem,4vw,3.4rem)', color: '#fdf8f3', marginTop: '1rem', letterSpacing: '-.02em', lineHeight: '1.08', fontWeight: 400 }}>
               Four pillars of
             </h2>
             <h2 style={{ fontSize: 'clamp(1.8rem,3.5vw,2.5rem)', color: '#c89f56', fontFamily: "'DM Serif Display', serif", marginTop: '.5rem', letterSpacing: '-.02em', lineHeight: '1.2', fontWeight: 400 }}>
               inner development
             </h2>
           </div>
-          <p style={{ fontSize: '.875rem', color: 'rgba(42,27,24,.6)', lineHeight: '1.7', maxWidth: '32rem' }}>
+          <p style={{ fontSize: '.875rem', color: 'rgba(253,248,243,.5)', lineHeight: '1.7', maxWidth: '32rem' }}>
             We do not teach children what to think. We create conditions in which they learn how to think — clearly, kindly, and courageously.
           </p>
         </div>

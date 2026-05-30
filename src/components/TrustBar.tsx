@@ -4,11 +4,13 @@ export default function TrustBar() {
   const trackRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    if (trackRef.current && !trackRef.current.parentElement?.querySelector('.trust-track[data-clone]')) {
-      const clone = trackRef.current.cloneNode(true) as HTMLDivElement;
-      clone.setAttribute('data-clone', 'true');
-      clone.removeAttribute('data-clone');
-      trackRef.current.parentElement?.appendChild(clone);
+    if (trackRef.current) {
+      const parent = trackRef.current.parentElement;
+      if (parent && !parent.querySelector('.trust-track[data-clone]')) {
+        const clone = trackRef.current.cloneNode(true) as HTMLDivElement;
+        clone.setAttribute('data-clone', '');
+        parent.appendChild(clone);
+      }
     }
   }, []);
 

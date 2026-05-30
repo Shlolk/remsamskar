@@ -267,25 +267,25 @@ export default function ExpandableCards() {
           </div>
         </motion.div>
 
-        {/* Card 05 — Overlap */}
+        {/* Card 05 — Wide */}
         <motion.div
           layoutId={`card-${cardsData[4].title}-${id}`}
           onClick={() => setActive(cardsData[4])}
-          className={`premium-card premium-card-overlap fade-up ${isInView ? 'visible' : ''}`}
+          className={`premium-card premium-card-wide fade-up ${isInView ? 'visible' : ''}`}
           whileHover={{ scale: 1.015 }}
           transition={{ duration: 0.3 }}
         >
           <div className="premium-card-inner">
             <motion.div layoutId={`image-${cardsData[4].title}-${id}`} className="premium-media">
               <img src={cardsData[4].image} alt="" className="premium-img" loading="lazy" onError={(e) => { (e.target as HTMLImageElement).style.display = 'none' }} />
-              <div className="premium-media-overlay" style={{ background: 'linear-gradient(to right, rgba(18,12,11,.3), transparent 50%, rgba(18,12,11,.3))' }} />
+              <div className="premium-media-overlay" style={{ background: 'linear-gradient(to right, transparent 50%, rgba(18,12,11,.8) 100%)' }} />
             </motion.div>
-            <div className="premium-content premium-content-overlap">
+            <div className="premium-content">
               <div className="premium-badge" style={{ color: cardsData[4].accent }}>Principle {cardsData[4].number}</div>
               <span className="premium-number">{cardsData[4].number}</span>
               <motion.h3 layoutId={`title-${cardsData[4].title}-${id}`} className="premium-title">{cardsData[4].title}</motion.h3>
               <motion.p layoutId={`desc-${cardsData[4].description}-${id}`} className="premium-desc">{cardsData[4].description}</motion.p>
-              <p className="premium-excerpt">{cardsData[4].content.slice(0, 80)}…</p>
+              <p className="premium-excerpt">{cardsData[4].content.slice(0, 90)}…</p>
               <div className="premium-cta" style={{ color: cardsData[4].accent }}>
                 <span>Explore principle</span>
                 <IconArrowRight size={16} stroke={2} />

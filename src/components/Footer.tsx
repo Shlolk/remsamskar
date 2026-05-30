@@ -70,7 +70,6 @@ export default function Footer() {
               <img src="/Public/ReSamskar_Logo.png" alt="ReSamskar logo" onError={(e) => (e.currentTarget.style.display = 'none')} />
               <span>ReSamskar </span>
             </div>
-            <nav className="footer-nav" />
             <p className="footer-copy">&copy; <span id="year" /> Resamskar</p>
           </div>
           <div className="footer-tagline">

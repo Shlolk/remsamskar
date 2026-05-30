@@ -1,4 +1,5 @@
 import { useStatCounters } from '../hooks/useStatCounters';
+import TrustBar from './TrustBar';
 
 export default function Hero() {
   useStatCounters();
@@ -24,7 +25,15 @@ export default function Hero() {
             Raising children who are <span className="red-metallic">wise</span>, <span style={{ color: '#d4a017' }}>kind</span>,<br className="hidden-sm" /> and <em className="blue-metallic">grounded</em>
           </h1>
         </div>
-        <img src="/kid.png" alt="" className="hero-kid-img" loading="lazy" />
+        <div className="hero-kid-wrap">
+            <img src="/bhudda.png" alt="" className="hero-kid-img" loading="lazy" />
+            <div className="sparkle s1" />
+            <div className="sparkle s2" />
+            <div className="sparkle s3" />
+            <div className="sparkle s4" />
+            <div className="sparkle s5" />
+            <div className="sparkle s6" />
+          </div>
         <p className="hero-p">
           Evidence-based programmes integrating modern developmental science with the timeless wisdom of classical Indian thought — building inner clarity, empathy, and purpose from childhood.
         </p>
@@ -34,6 +43,9 @@ export default function Hero() {
             <path d="M2 7.5h11M7.5 2l5.5 5.5-5.5 5.5" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
           </svg>
         </a>
+        <div style={{ marginTop: '3.5rem' }}>
+          <TrustBar />
+        </div>
         <div className="metrics fade-up">
           <div className="metric">
             <p className="metric-n">3</p>

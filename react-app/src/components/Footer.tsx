@@ -17,13 +17,13 @@ export default function Footer() {
                 <span className="eyebrow-line" style={{ background: '#c89f56' }} />
                 Gift Your Child
               </span>
-              <h2 style={{ fontSize: 'clamp(2rem,4vw,3.2rem)', color: '#120c0b', marginTop: '1rem', letterSpacing: '-.02em', lineHeight: '1.08', fontWeight: 400 }}>
+              <h2 style={{ fontSize: 'clamp(2rem,4vw,3.2rem)', color: '#fdf8f3', marginTop: '1rem', letterSpacing: '-.02em', lineHeight: '1.08', fontWeight: 400 }}>
                 Begin the
               </h2>
               <h2 style={{ fontSize: 'clamp(1.8rem,3.5vw,2.5rem)', color: '#c89f56', fontFamily: "'DM Serif Display', serif", marginTop: '.5rem', letterSpacing: '-.02em', lineHeight: '1.2', fontWeight: 400 }}>
                 journey
               </h2>
-              <p style={{ fontSize: '.875rem', marginTop: '1rem', maxWidth: '22rem', lineHeight: '1.7', color: 'rgba(42,27,24,.6)' }}>
+              <p style={{ fontSize: '.875rem', marginTop: '1rem', maxWidth: '22rem', lineHeight: '1.7', color: 'rgba(253,248,243,.5)' }}>
                 Every child deserves an education that speaks to their whole being — mind, heart, and spirit.
               </p>
             </div>
@@ -56,7 +56,7 @@ export default function Footer() {
                 </a>
               </div>
               <div className="email-capture" style={{ alignItems: 'flex-end' }}>
-                <p style={{ fontFamily: "'Inter',sans-serif", fontSize: '.65rem', letterSpacing: '.15em', textTransform: 'uppercase', color: 'rgba(42,27,24,.38)' }}>Stay connected</p>
+                <p style={{ fontFamily: "'Inter',sans-serif", fontSize: '.65rem', letterSpacing: '.15em', textTransform: 'uppercase', color: 'rgba(253,248,243,.38)' }}>Stay connected</p>
                 <div className="email-capture-inner">
                   <input type="email" placeholder="Your email" aria-label="Email address" style={{ color: '#120c0b' }} />
                   <button onClick={() => alert('Thank you! We will keep you updated.')}>Subscribe</button>

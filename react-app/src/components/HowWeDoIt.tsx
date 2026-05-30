@@ -9,13 +9,13 @@ export default function HowWeDoIt() {
             <span className="eyebrow-line" style={{ background: '#e07a5f' }} />
             Our Method
           </span>
-          <h2 style={{ fontSize: 'clamp(2.4rem,5vw,4rem)', color: '#120c0b', letterSpacing: '-.03em', lineHeight: '1.05', marginTop: '1rem', fontWeight: 400 }}>
+          <h2 style={{ fontSize: 'clamp(2.4rem,5vw,4rem)', color: '#fdf8f3', letterSpacing: '-.03em', lineHeight: '1.05', marginTop: '1rem', fontWeight: 400 }}>
             Five principles
           </h2>
           <h2 style={{ fontSize: 'clamp(1.8rem,3.5vw,2.5rem)', color: '#c89f56', fontFamily: "'DM Serif Display', serif", marginTop: '.5rem', letterSpacing: '-.02em', lineHeight: '1.2', fontWeight: 400 }}>
             one purpose
           </h2>
-          <p style={{ fontSize: '1rem', color: 'rgba(42,27,24,.6)', marginTop: '1rem', maxWidth: '32rem', lineHeight: '1.7' }}>
+          <p style={{ fontSize: '1rem', color: 'rgba(253,248,243,.55)', marginTop: '1rem', maxWidth: '32rem', lineHeight: '1.7' }}>
             Most schools teach children <em>what</em> to think. We teach them <em>how</em> to be. Five principles, practised daily, that parents see transform their children.
           </p>
         </div>

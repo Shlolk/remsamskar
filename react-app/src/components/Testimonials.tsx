@@ -1,4 +1,4 @@
-import { useGoldMagic } from '../hooks/useGoldMagic';
+import ScrollStack, { ScrollStackItem } from './ScrollStack';
 
 const testimonials = [
   {
@@ -20,40 +20,38 @@ const testimonials = [
 ];
 
 export default function Testimonials() {
-  useGoldMagic('.testimonial');
-
   return (
-    <section id="testimonials" className="section" style={{ borderTop: '1px solid rgba(200,159,86,.1)' }}>
+    <section id="testimonials" className="section" style={{ borderTop: '1px solid rgba(200,159,86,.1)', overflow: 'hidden' }}>
       <div className="container">
         <div className="fade-up" style={{ marginBottom: '3rem' }}>
           <span className="eyebrow" style={{ color: '#c89f56' }}>
             <span className="eyebrow-line" style={{ background: '#c89f56' }} />
             What Parents Say
           </span>
-          <h2 style={{ fontSize: 'clamp(2rem,4vw,3.2rem)', color: '#120c0b', marginTop: '1rem', letterSpacing: '-.02em', lineHeight: '1.08', fontWeight: 400 }}>
+          <h2 style={{ fontSize: 'clamp(2rem,4vw,3.2rem)', color: '#fdf8f3', marginTop: '1rem', letterSpacing: '-.02em', lineHeight: '1.08', fontWeight: 400 }}>
             Real children,
           </h2>
           <h2 style={{ fontSize: 'clamp(1.8rem,3.5vw,2.5rem)', color: '#c89f56', fontFamily: "'DM Serif Display', serif", marginTop: '.5rem', letterSpacing: '-.02em', lineHeight: '1.2', fontWeight: 400 }}>
             real change
           </h2>
         </div>
-        <div className="grid-2">
+        <ScrollStack useWindowScroll baseScale={0.9} itemDistance={120} itemStackDistance={40} stackPosition="15%" blurAmount={2}>
           {testimonials.map((t, i) => (
-            <div key={i} className="fade-up">
-              <blockquote className="testimonial">
-                <span className="testimonial-mark">"</span>
-                <p className="testimonial-q">{t.text}</p>
-                <div className="testimonial-author">
-                  <div className="testimonial-avatar">{t.initials}</div>
-                  <div className="testimonial-meta">
-                    <p className="testimonial-name">{t.name}</p>
-                    <p className="testimonial-from">{t.from}</p>
+            <ScrollStackItem key={i}>
+              <blockquote style={{ height: '100%', display: 'flex', flexDirection: 'column', gap: '1.25rem' }}>
+                <span style={{ fontFamily: "'DM Serif Display', serif", fontSize: '3rem', lineHeight: 1, color: '#c89f56', opacity: 0.3 }}>"</span>
+                <p style={{ fontFamily: "'DM Serif Display', Georgia, serif", fontStyle: 'italic', fontSize: '1.125rem', lineHeight: 1.375, flex: 1, color: '#fdf8f3' }}>{t.text}</p>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '.85rem', paddingTop: '1rem', borderTop: '1px solid rgba(200,159,86,.1)', marginTop: 'auto' }}>
+                  <div style={{ width: '2.75rem', height: '2.75rem', borderRadius: '50%', background: 'linear-gradient(135deg,#c89f56,#e8c46a)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: "'DM Serif Display', serif", fontSize: '1rem', color: '#120c0b', fontWeight: 500, flexShrink: 0, boxShadow: '0 4px 12px rgba(200,159,86,.2)' }}>{t.initials}</div>
+                  <div style={{ display: 'flex', flexDirection: 'column', gap: '.15rem' }}>
+                    <p style={{ fontFamily: "'Inter', system-ui, sans-serif", fontSize: '.875rem', fontWeight: 500, lineHeight: '1.25rem', color: '#fdf8f3' }}>{t.name}</p>
+                    <p style={{ fontFamily: "'Inter', system-ui, sans-serif", fontSize: '.75rem', lineHeight: '1rem', color: 'rgba(253,248,243,.4)' }}>{t.from}</p>
                   </div>
                 </div>
               </blockquote>
-            </div>
+            </ScrollStackItem>
           ))}
-        </div>
+        </ScrollStack>
       </div>
     </section>
   );

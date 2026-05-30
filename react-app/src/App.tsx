@@ -10,7 +10,6 @@ import Programs from './components/Programs';
 import HowWeDoIt from './components/HowWeDoIt';
 import Pillars from './components/Pillars';
 import Testimonials from './components/Testimonials';
-import TrustBar from './components/TrustBar';
 import DemoSection from './components/DemoSection';
 import Footer from './components/Footer';
 import BackToTop from './components/BackToTop';
@@ -31,7 +30,6 @@ function App() {
       <HowWeDoIt />
       <Pillars />
       <Testimonials />
-      <TrustBar />
       <DemoSection />
       <Footer />
       <BackToTop />

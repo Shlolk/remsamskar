@@ -2,7 +2,7 @@
 
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth;scroll-padding-top:3.5rem;-webkit-font-smoothing:antialiased}
-body{background:#fdf8f3;color:#120c0b;font-family:'Cormorant Garamond','Georgia',serif;font-size:18px;line-height:1.7}
+body{background:#120c0b;color:#fdf8f3;font-family:'Cormorant Garamond','Georgia',serif;font-size:18px;line-height:1.7}
 ::selection{background:#0f3b46;color:#f9f6f3}
 h1,h2,h3,h4,h5{font-family:'DM Serif Display',Georgia,serif;font-weight:400;line-height:1.1;letter-spacing:-0.02em}
 a{text-decoration:none}
